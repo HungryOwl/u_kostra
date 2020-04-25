@@ -1,4 +1,7 @@
 @import "normalize"; // сброс стилей
+@import "blocks/variables"; // сброс стилей
+@import "blocks/main-layout"; // сброс стилей
+@import "blocks/aside-layout"; // сброс стилей
 
 body {
     background-color: #e2e2d4;
@@ -7,7 +10,7 @@ body {
     line-height: 19px;
 }
 
-h1, h2, h3 {
+h2, h3 {
     font-family: "Roboto", sans-serif;
     margin: 2em 0 1em 0;
     text-align: center;
@@ -18,6 +21,12 @@ h2.title {
     line-height: 32px;
     margin: 48px 0 10px;
 }
+
+//.page-header {
+//    min-height: 90px;
+//    display: flex;
+//    background-color: whitesmoke;
+//}
 
 .page-body {
     display: flex;
@@ -55,59 +64,8 @@ h2.title {
     text-decoration: none;
 }
 
-.aside-layout {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 0;
-    flex-shrink: 0;
-    flex-basis: auto;
-    width: calc((100% - 1448px) / 2 + 400px);
-    min-width: 300px;
-    padding-left: calc((100% - 1448px) / 2);
-    text-align: center;
-    background: #F5F7F9;
-
-    &__content {
-        background-color: magenta;
-    }
-}
-
-.main-layout {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: auto;
-    max-width: 100%;
-    min-width: 0;
-    padding: 0;
-    background-color: yellow;
-
-    &__content {
-        width: 1448px - 400px;
-        background-color: aqua;
-    }
-}
-
-.aside-layout ul {
-    list-style-type: none;
-    font-size: 16px;
-    line-height: 21px;
-}
-
-.toc__some {
-    display: inline-block;
+.songs {
     text-align: left;
-}
-
-.aside-layout a {
-    text-decoration: none;
-}
-
-.aside-layout a:hover
-{
-    border-bottom: 1px dashed;
 }
 
 .year

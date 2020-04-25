@@ -1,0 +1,65 @@
+.aside-layout {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+  width: $aside-width;
+  min-width: 420px;
+  padding-left: $aside-padding-left;
+  text-align: center;
+  color: $aside-color;
+  // background: #354154;
+  background: whitesmoke;
+
+  &__wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: auto;
+    width: 420px;
+    overflow-y: auto;
+  }
+
+  &__container {
+    background-color: white;
+  }
+
+  &__title {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 28px;
+    line-height: 32px;
+    color: #1c2129;
+  }
+
+  &__subtitle {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+}
+
+.song-list {
+  margin: 0;
+  margin-top: 30px;
+  list-style-type: none;
+  padding-right: 30px;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: left;
+
+  &__link {
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: $aside-color;
+    text-decoration: none;
+  }
+
+  &__link:hover {
+    border-bottom: 1px dashed;
+  }
+}

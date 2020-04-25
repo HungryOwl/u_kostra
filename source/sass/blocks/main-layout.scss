@@ -1,0 +1,21 @@
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 0;
+  // background-color: #1c2129;
+  // background-color: #1c2129;
+  // background-color: #191c20;
+  // background-image: linear-gradient(to right, #242831, #1c2129);
+  // background-image: linear-gradient(to right, #242831, #191c20);
+  background-color: #242831;
+
+  &__content {
+    width: $main-width;
+    color: whitesmoke;
+  }
+}

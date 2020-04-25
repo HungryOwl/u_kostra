@@ -1,0 +1,11 @@
+// color
+$aside-color: #1c1f24;
+$aside-background-color: #f5f5f5;
+
+// width
+$full-width: 1448px;
+$aside-initial-width: 420px;
+$content-width: $full-width - $aside-initial-width;
+$aside-width: calc((100% - #{$full-width}) / 2 + #{$aside-initial-width});
+$aside-padding-left: calc((100% - #{$full-width}) / 2);
+$main-width: $full-width - $aside-initial-width;
