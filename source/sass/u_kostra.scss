@@ -1,0 +1,246 @@
+body
+{
+    background-color: #e2e2d4;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+h1, h2, h3
+{
+    font-family: "Roboto", sans-serif;
+    margin: 2em 0 1em 0;
+    text-align: center;
+}
+
+h2.title
+{
+    font-size: 28px;
+    line-height: 32px;
+    margin: 48px 0 10px;
+}
+
+.menu
+{
+    display: inline-block;
+    font-family: Georgia;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.menu li
+{
+    background: #eee;
+    padding: 0 10px;
+    height: 30px;
+    float: left;
+}
+
+.menu li:hover
+{
+    background: #ddd;
+}
+
+.menu a
+{
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    text-decoration: none;
+}
+
+.toc
+{
+    text-align: center;
+}
+
+.toc ul
+{
+    list-style-type: none;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.toc div
+{
+    display: inline-block;
+    text-align: left;
+}
+
+.toc a
+{
+    text-decoration: none;
+}
+
+.toc a:hover
+{
+    border-bottom: 1px dashed;
+}
+
+.year
+{
+    color: black;
+}
+
+figure.cover
+{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 50%;
+}
+
+figure.vertical.cover
+{
+    width: 30%;
+}
+
+figure.cover img
+{
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+}
+
+figure.cover figcaption
+{
+    bottom: 5px;
+    text-shadow: 0 0 5px black;
+    color: white;
+    display: none;
+    position: absolute;
+    right: 7px;
+}
+
+figure.cover figcaption.white
+{
+    text-shadow: 0 0 5px white;
+    color: black;
+}
+
+figure.cover figcaption.complex
+{
+    box-shadow: 0 0 5px white;
+    text-shadow: none;
+    background: white;
+    color: black;
+}
+
+figure.cover figcaption.complex.black
+{
+    box-shadow: 0 0 5px black;
+    background: black;
+    color: white;
+}
+
+figure.cover:hover figcaption
+{
+    display: block;
+    text-align: right;
+    padding: 0 2px;
+    border-radius: 4px;
+}
+
+.lyrics
+{
+    display: table;
+    margin: 0 auto;
+    transform: translateX(10%);
+}
+
+.lyrics p
+{
+    font-size: 16px;
+    line-height: 21px;
+    margin: 16px 0;
+    white-space: pre-wrap;
+}
+
+.lyrics p.chorus
+{
+    font-style: italic;
+}
+
+.lyrics p.author
+{
+    color: #888;
+    font-style: normal;
+}
+
+.text-group
+{
+    border-spacing: 0;
+    display: inline-block;
+}
+
+.text-group .text
+{
+    border-collapse: none;
+    border-right: 2px solid black;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+    display: table-cell;
+    padding-right: 9px;
+}
+
+.text-group .legend
+{
+    display: table-cell;
+    font-style: normal;
+    padding-left: 2px;
+    vertical-align: middle;
+}
+
+.youtube-player
+{
+    background: #000;
+    height: 360px;
+    margin: 5px auto;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 640px;
+}
+
+.youtube-player iframe
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: transparent;
+}
+
+.youtube-player img
+{
+    border: none;
+    cursor: pointer;
+    display: block;
+    height: auto;
+    position: absolute;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    transition: 0.5s all;
+    width: 100%;
+}
+
+.youtube-player img:hover
+{
+    -webkit-filter: brightness(75%);
+}
+
+.youtube-player .play
+{
+    background: url("video_play.png") no-repeat;
+    cursor: pointer;
+    height: 72px;
+    left: 50%;
+    margin: -36px;
+    position: absolute;
+    top: 50%;
+    width: 72px;
+}

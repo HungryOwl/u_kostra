@@ -1,0 +1,37 @@
+{
+  "name": "u_kostra",
+  "version": "0.1.0",
+  "private": true,
+  "repository": {
+    "type": "git"
+  },
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.x",
+    "autoprefixer": "9.5.x",
+    "browser-sync": "2.26.x",
+    "del": "^5.1.0",
+    "gulp": "4.0.x",
+    "gulp-plumber": "1.2.x",
+    "gulp-postcss": "8.0.x",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "4.0.x",
+    "node-normalize-scss": "^8.0.1",
+    "pug": "^2.0.4",
+    "stylelint": "10.1.x",
+    "stylelint-config-htmlacademy": "0.1.x"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "scripts": {
+    "test": "editorconfig-tools check *",
+    "build": "gulp style",
+    "start": "gulp start",
+    "copy": "gulp copy"
+  },
+  "engines": {
+    "node": "8.16"
+  }
+}
