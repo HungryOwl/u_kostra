@@ -2,6 +2,7 @@
 @import "blocks/variables"; // сброс стилей
 @import "blocks/main-layout"; // сброс стилей
 @import "blocks/aside-layout"; // сброс стилей
+@import "blocks/song"; // сброс стилей
 
 body {
     background-color: #e2e2d4;
@@ -10,16 +11,10 @@ body {
     line-height: 19px;
 }
 
-h2, h3 {
+h3 {
     font-family: "Roboto", sans-serif;
     margin: 2em 0 1em 0;
     text-align: center;
-}
-
-h2.title {
-    font-size: 28px;
-    line-height: 32px;
-    margin: 48px 0 10px;
 }
 
 //.page-header {
@@ -68,33 +63,28 @@ h2.title {
     text-align: left;
 }
 
-.year
-{
+.year {
     color: black;
 }
 
-figure.cover
-{
+figure.cover {
     display: block;
     margin: 0 auto;
     position: relative;
     width: 50%;
 }
 
-figure.vertical.cover
-{
+figure.vertical.cover {
     width: 30%;
 }
 
-figure.cover img
-{
+figure.cover img {
     border-radius: 5px;
     display: block;
     width: 100%;
 }
 
-figure.cover figcaption
-{
+figure.cover figcaption {
     bottom: 5px;
     text-shadow: 0 0 5px black;
     color: white;
@@ -103,69 +93,62 @@ figure.cover figcaption
     right: 7px;
 }
 
-figure.cover figcaption.white
-{
+figure.cover figcaption.white {
     text-shadow: 0 0 5px white;
     color: black;
 }
 
-figure.cover figcaption.complex
-{
+figure.cover figcaption.complex {
     box-shadow: 0 0 5px white;
     text-shadow: none;
     background: white;
     color: black;
 }
 
-figure.cover figcaption.complex.black
-{
+figure.cover figcaption.complex.black {
     box-shadow: 0 0 5px black;
     background: black;
     color: white;
 }
 
-figure.cover:hover figcaption
-{
+figure.cover:hover figcaption {
     display: block;
     text-align: right;
     padding: 0 2px;
     border-radius: 4px;
 }
 
-.lyrics
-{
+.poem {
     display: table;
     margin: 0 auto;
     transform: translateX(10%);
 }
 
-.lyrics p
-{
+.poem p {
     font-size: 16px;
     line-height: 21px;
     margin: 16px 0;
-    white-space: pre-wrap;
 }
 
-.lyrics p.chorus
-{
+.poem .line {
+    display: block;
+}
+
+.poem p.chorus {
     font-style: italic;
 }
 
-.lyrics p.author
-{
+.poem p.author {
     color: #888;
     font-style: normal;
 }
 
-.text-group
-{
+.text-group {
     border-spacing: 0;
     display: inline-block;
 }
 
-.text-group .text
-{
+.text-group .text {
     border-collapse: none;
     border-right: 2px solid black;
     border-bottom-right-radius: 7px;
@@ -174,16 +157,14 @@ figure.cover:hover figcaption
     padding-right: 9px;
 }
 
-.text-group .legend
-{
+.text-group .legend {
     display: table-cell;
     font-style: normal;
     padding-left: 2px;
     vertical-align: middle;
 }
 
-.youtube-player
-{
+.youtube-player {
     background: #000;
     height: 360px;
     margin: 5px auto;
@@ -193,8 +174,7 @@ figure.cover:hover figcaption
     width: 640px;
 }
 
-.youtube-player iframe
-{
+.youtube-player iframe {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -202,8 +182,7 @@ figure.cover:hover figcaption
     background: transparent;
 }
 
-.youtube-player img
-{
+.youtube-player img {
     border: none;
     cursor: pointer;
     display: block;
@@ -215,13 +194,11 @@ figure.cover:hover figcaption
     width: 100%;
 }
 
-.youtube-player img:hover
-{
+.youtube-player img:hover {
     -webkit-filter: brightness(75%);
 }
 
-.youtube-player .play
-{
+.youtube-player .play {
     background: url("video_play.png") no-repeat;
     cursor: pointer;
     height: 72px;
