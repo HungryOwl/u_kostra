@@ -91,6 +91,8 @@ figure.cover figcaption {
     display: none;
     position: absolute;
     right: 7px;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 figure.cover figcaption.white {
@@ -103,18 +105,20 @@ figure.cover figcaption.complex {
     text-shadow: none;
     background: white;
     color: black;
+    padding: 1px 7px;
 }
 
 figure.cover figcaption.complex.black {
     box-shadow: 0 0 5px black;
     background: black;
     color: white;
+    padding: 0 7px;
 }
 
 figure.cover:hover figcaption {
     display: block;
     text-align: right;
-    padding: 0 2px;
+    padding: 1px 6px;
     border-radius: 4px;
 }
 
@@ -150,7 +154,7 @@ figure.cover:hover figcaption {
 
 .text-group .text {
     border-collapse: none;
-    border-right: 2px solid black;
+    border-right: 2px solid whitesmoke;
     border-bottom-right-radius: 7px;
     border-top-right-radius: 7px;
     display: table-cell;
