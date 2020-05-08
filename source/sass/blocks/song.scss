@@ -37,4 +37,19 @@
   &__link:hover {
     border-bottom: 1px dashed;
   }
+
+  &__sublist {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__chapter {
+    padding-left: 20px;
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 600;
+    color: #383b40;
+  }
 }
