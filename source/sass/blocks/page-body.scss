@@ -1,0 +1,13 @@
+.page-body {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+
+@media (max-width: 1023px) {
+  .page-body {
+    flex-direction: column;
+    width: 100%;
+  }
+}

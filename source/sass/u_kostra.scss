@@ -1,5 +1,6 @@
 @import "normalize"; // сброс стилей
 @import "blocks/variables"; // сброс стилей
+@import "blocks/page-body"; // сброс стилей
 @import "blocks/main-layout"; // сброс стилей
 @import "blocks/aside-layout"; // сброс стилей
 @import "blocks/song"; // сброс стилей
@@ -22,13 +23,6 @@ h3 {
 //    display: flex;
 //    background-color: whitesmoke;
 //}
-
-.page-body {
-    display: flex;
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 0;
-}
 
 .menu {
     display: inline-block;
@@ -84,6 +78,17 @@ figure.cover img {
     width: 100%;
 }
 
+@media screen and (max-width: 425px) {
+    figure.cover,
+    figure.vertical.cover {
+        width: 100%;
+    }
+
+    figure.cover img {
+        border-radius: 0;
+    }
+}
+
 figure.cover figcaption {
     bottom: 5px;
     text-shadow: 0 0 5px black;
@@ -93,6 +98,14 @@ figure.cover figcaption {
     right: 7px;
     font-size: 14px;
     line-height: 20px;
+    border-radius: 4px;
+}
+
+
+@media (max-width: 1023px) {
+    figure.cover figcaption {
+        display: block;
+    }
 }
 
 figure.cover figcaption.white {
@@ -126,6 +139,15 @@ figure.cover:hover figcaption {
     display: table;
     margin: 0 auto;
     transform: translateX(10%);
+}
+
+@media screen and (max-width: 425px) {
+    .poem {
+        margin: 0;
+        padding-left: 30px;
+        padding-right: 30px;
+        transform: none;
+    }
 }
 
 .poem p {

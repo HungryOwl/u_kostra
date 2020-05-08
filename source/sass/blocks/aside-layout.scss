@@ -1,4 +1,5 @@
 .aside-layout {
+  position: relative;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -12,6 +13,7 @@
   color: $aside-color;
   // background: #354154;
   background: whitesmoke;
+  z-index: 1;
 
   &__wrapper {
     position: fixed;
@@ -20,6 +22,7 @@
     left: auto;
     width: 420px;
     overflow-y: auto;
+    background: whitesmoke;
   }
 
   &__container {
@@ -39,6 +42,17 @@
     margin-top: 10px;
     margin-bottom: 10px;
   }
+}
 
+@media screen and (max-width: 1023px) {
+  .aside-layout {
+    width: 100%;
+    min-width: auto;
+    &__wrapper {
+      position: relative;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
 }
 
