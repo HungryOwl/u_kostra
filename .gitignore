@@ -9,5 +9,4 @@ Thumbs.db
 css/*.css
 *.css.map
 *.log
-*.html
 build/

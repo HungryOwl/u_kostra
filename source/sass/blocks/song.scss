@@ -45,11 +45,17 @@
     list-style: none;
   }
 
+  &__sublist > .song-list__item:first-of-type {
+    outline: 2px solid red;
+    padding-top: 0;
+  }
+
   &__chapter {
     padding-left: 20px;
     font-size: 32px;
     line-height: 38px;
     font-weight: 600;
     color: #383b40;
+    text-shadow: 1px 0 1px white;
   }
 }
